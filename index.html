@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Spotify</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <style>
+        .accordion-button {
+            background-color: #121212 !important;
+            color: white !important;
+        }
+
+        .accordion-button::after {
+            color: white !important;
+        }
+
+        a:hover {
+            color: #1db954 !important;
+            text-decoration: none;
+        }
+
+        .btn-kullanmaya-basla:hover {
+            background-color: #ffe9ec !important;
+            color: black !important;
+            /* inline style override etmek için !important */
+            transform: scale(1.02);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn-tum-planlar:hover {
+            /* Spotify yeşili, inline’ı override etmek için !important */
+            color: white !important;
+            /* Rengi beyaz tutalım hoverda da */
+            transform: scale(1.02);
+            transition: background-color 0.3s ease, transform 0.1s ease;
+        }
+    </style>
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body style="background-color: #121212;" class="text-white">
+    <nav class="navbar navbar-expand-lg bg-black text-white py-3">
+        <div class="container-md">
+            <a class="navbar-brand text-white fw-bold ms-5 fs-5" href="#"><i class="bi bi-spotify fs-5"></i> Spotify</a>
+
+            <div class="ms-5"><a class="navbar-brand text-white fw-bold mx-3 fs-6" href="#">Premium</a>
+                <a class="navbar-brand text-white fw-bold mx-3 fs-6" href="#">Destek</a>
+                <a class="navbar-brand text-white fw-bold mx-3 fs-6" href="#">İndir</a>
+                <a class="navbar-brand text-white fw-bold mx-3 fs-6" href="#">|</a>
+                <a class="navbar-brand text-white fw-bold mx-3 fs-6" href="#">Kaydol</a>
+                <a class="navbar-brand text-white fw-bold mx-3 fs-6" href="#">Oturum Aç</a>
+            </div>
+        </div>
+    </nav>
+    <section class="container-md py-5"><img
+            src="https://wwwmarketing.scdn.co/static/images/premium/desktop-album-evergreen-1x.png" style="width: 50%;
+            position: absolute;
+            right: 0;
+            top: 50px;
+            z-index: -1;
+            " alt="">
+        <h2 style="font-size: 45px;" class="fw-bold">Sınırsız dinle. Hesabını<br>
+            Premium Bireysel planına <br>
+            yükselttiğinde 1 ay ücretsiz</h2>
+        <p class="mt-3 fw-semibold">Sonra yalnızca ₺59,99/ay. İstediğin zaman iptal et.</p>
+
+        <button style="background-color: #ffd2d7; width: 190px; height: 50px; border-radius: 50px;" type="button"
+            class="btn fw-bold me-2 mt-3 btn-kullanmaya-basla">
+            Kullanmaya başla
+        </button>
+        <button
+            style="width: 250px; height: 50px; border-radius: 50px; background-color: black; border-color: rgb(173, 171, 171); border-width:1px;"
+            type="button" class="btn fw-bold text-white mx-2 mt-3 btn-tum-planlar">
+            Tüm planları görüntüle
+        </button>
+
+        <p style="font-size: 10px;" class="mt-4">İlk 1 ay boyunca ücretsiz, sonra ayda ₺59,99. Sadece Premium'u daha
+            önce<br> denememiş kişiler
+            tekliften
+            yararlanabilir. <u class="text-decoration-underline">Koşullar geçerlidir.</u></p>
+    </section>
+
+    <section class="container py-5 mt-3">
+        <p class="fw-bold text-center fs-1">Farkı keşfet</p>
+        <p class="text-center fs-4">Premium'a geç ve dinleyeceğine yalnızca sen karar ver. İstediğin <br> zaman iptal
+            et.</p>
+
+        <div class="mt-5 w-50 mx-auto">
+            <table class="table table-hover table-dark">
+                <thead>
+                    <tr>
+                        <th class="pb-3" scope="col">Elde edeceğin avantajlar</th>
+                        <th class="text-center" scope="col">Spotify'ın <br>
+                            Free planı</th>
+                        <th class="text-center" scope="col"><i class="bi bi-spotify"></i> Spotify'ın <br>
+                            Premium planları</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider table-divider-color">
+                    <tr>
+                        <td>Reklamsız müzik dinle</td>
+                        <td class="text-center">-</td>
+                        <td class="text-center"><i class="bi bi-check-circle-fill fs-3"></i></td>
+                    </tr>
+                    <tr>
+                        <td>İndir ve çevrimdışı dinle</td>
+                        <td class="text-center">-</td>
+                        <td class="text-center"><i class="bi bi-check-circle-fill fs-3"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Şarkıları istediğin sırada çal</td>
+                        <td class="text-center">-</td>
+                        <td class="text-center"><i class="bi bi-check-circle-fill fs-3"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Yüksek ses kalitesi</td>
+                        <td class="text-center">-</td>
+                        <td class="text-center"><i class="bi bi-check-circle-fill fs-3"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Arkadaşlarınla aynı anda dinle</td>
+                        <td class="text-center">-</td>
+                        <td class="text-center"><i class="bi bi-check-circle-fill fs-3"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Dinleme sıranı düzenle</td>
+                        <td class="text-center">-</td>
+                        <td class="text-center"><i class="bi bi-check-circle-fill fs-3"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="container py-5 my-4 ">
+        <div class="mb-5">
+            <p class="fw-bold text-center fs-2">Soruların mı var?</p>
+            <p class="text-center fs-6">Yanıtları bizde. <br> <br>
+                <a style="color: white;" href="#">Destek sitemizde</a> sorularının yanıtlarını bulabilirsin.
+            </p>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Spotify Premium teklifi nasıl işler?
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Premium'u daha önce kullanmadıysan ücretsiz (veya düşük fiyatlı) bir
+                        tekliften yararlanabilirsin.
+
+                        Öncelikle geçerli bir ödeme yöntemi girerek üye olman gerekir. Üye olmadan önce herhangi bir
+                        teklif için uygun olup olmadığını görüntüleyebilirsin. Teklifin sona ermeden 7 gün önce sana
+                        hatırlatma göndeririz. Bulunduğun ülkedeki kısıtlamalar ve hükümler geçerlidir.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Premium planımı nasıl iptal edebilirim?
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Premium planını dilediğin zaman çevrimiçi olarak hesap sayfandan kolayca
+                        iptal edebilirsin. Premium planın sonraki fatura tarihine kadar iptal edilmez. Bu tarihten sonra
+                        hesabın ücretsiz planımıza geçer.
+
+                        Ücretsiz hesaba geçtiğinde çalma listelerinle kaydettiğin müzikler sende kalır ve dinlerken
+                        reklamları duyarsın.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Premium Aile planı nasıl çalışır?
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Premium Aile, birlikte yaşayan en fazla 6 aile üyesinin
+                        yararlanabileceği bir plandır. Herkesin kendi Premium Bireysel hesabı için tam fiyat ödemekten
+                        daha ekonomiktir. Aynı adreste yaşadığını onaylamak için adresini isteriz. Satın alma işleminden
+                        sonra plana üye davet edebilirsin. Her üyenin ayrı birer Premium hesabı olur ve kendi hesabıyla
+                        aynı anda dinleyebilir. Herkesin kendi kayıtlı müziği ve çalma listeleri kendisinde kalır. Diğer
+                        hesap sahipleri ne dinlediğini göremezler.
+
+                        Premium Aile <a style="color: black;" href="#">hakkında daha fazla bilgi edin.</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="footer container-fluid bg-black p-5 m-auto row" style="height: 400px;">
+        <div class="container row g-1">
+            <div class="col-6 col-md-2">
+                <i class="bi bi-spotify fs-3"></i>
+                <h3 class="fw-bold d-inline-block">Spotify</h3>
+            </div>
+            <div class="col-6 col-md-2">
+                <p class="fw-bold text-secondary">ŞİRKET</p>
+                <ul class="list-unstyled">
+                    <li class="">Hakkında</li>
+                    <li class="">Kariyer</li>
+                    <li class="">For the Record</li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-2">
+                <p class="fw-bold text-secondary">TOPLULUKLAR</p>
+                <ul class="list-unstyled">
+                    <li class="">Sanatçılar İçin</li>
+                    <li class="">Geliştiriciler</li>
+                    <li class="">Reklam</li>
+                    <li class="">Yatırımcılar</li>
+                    <li>Satıcılar</li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-2">
+                <p class="fw-bold text-secondary">YARARLI BAĞLANTILAR</p>
+                <ul class="list-unstyled">
+                    <li class="">Destek</li>
+                    <li class="">Web Çalar</li>
+                    <li class="">Ücretsiz Mobil Uygulama</li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-2">
+                <p class="fw-bold text-secondary">SPOTİFY PLANLARI</p>
+                <ul class="list-unstyled">
+                    <li class="">Premium Bireysel</li>
+                    <li class="">Premium Duo</li>
+                    <li class="">Premium Aile</li>
+                    <li class="">Premium Öğrenci</li>
+                    <li>Spotify Free</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md d-flex justify-content-start gap-3">
+                <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white fs-4"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
+            </div>
+
+
+            <div class="container mt-3">
+                <div
+                    class="d-flex flex-column flex-md-row justify-content-between align-items-center text-secondary small gap-2 flex-wrap">
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#" class="text-secondary text-decoration-none">Yasal</a>
+                        <a href="#" class="text-secondary text-decoration-none">Güvenlik ve Gizlilik Merkezi</a>
+                        <a href="#" class="text-secondary text-decoration-none">Gizlilik Politikası</a>
+                        <a href="#" class="text-secondary text-decoration-none">Tanımlama Bilgisi Ayarları</a>
+                        <a href="#" class="text-secondary text-decoration-none">Reklamlar Hakkında</a>
+                        <a href="#" class="text-secondary text-decoration-none">Erişilebilirlik</a>
+
+                    </div>
+                    <div class="ms-auto text-end"> <a href="#" class="text-secondary text-decoration-none">Türkiye</a>
+                        <br>© 2025 Spotify AB
+                    </div>
+                </div>
+            </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
